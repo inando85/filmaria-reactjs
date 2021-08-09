@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams, useHistory } from 'react-router-dom'
 import Loader from "react-js-loader"
+import { toast } from 'react-toastify'
 
 import './filme.css'
 import api from '../../services/api'
@@ -47,13 +48,13 @@ const Filme = () => {
     const hasFilme = filmesSalvos.some((filmeSalvo) => filmeSalvo.id === filme.id)
 
     if (hasFilme) {
-      alert('Você já possui este filme salvo!')
+      toast.error('Esse filme já está salvo na sua lista.')
       return
     }
 
     filmesSalvos.push(filme)
     localStorage.setItem('filmes', JSON.stringify(filmesSalvos))
-    alert('Filme salvo com sucesso!')
+    toast.success('Filme salvo na sua lista de favoritos.')
   }
 
   if (loading) {

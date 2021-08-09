@@ -31,7 +31,7 @@ ul li:hover {
 }
 
 span {
-  font-size: 1.4375rem;
+  font-size: 23px;
 }
 
 button {
@@ -63,4 +63,10 @@ ul li div a {
 
 ul li div a:hover {
   opacity: 0.8;
+}
+
+@media screen and (max-width: 600px) {
+  span {
+    font-size: 1.2rem;
+  }
 }

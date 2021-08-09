@@ -11,9 +11,13 @@
   margin: 300px auto;
 }
 
+.filme-info h1 {
+  margin-bottom: 1.875rem;
+}
+
 .filme-info img {
   border-radius: 1.25rem;
-  margin-top: 1.25rem;
+  /* margin-top: 1.25rem; */
 }
 
 .sinopse {

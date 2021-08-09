@@ -1,0 +1,33 @@
+.not-found {
+  width: 90%;
+  margin: 3.75rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.not-found h1 {
+  font-size: 12.5rem;
+  color: #84e;
+}
+
+.not-found h2 {
+  font-size: 5rem;
+  margin-bottom: 5rem;
+}
+
+.not-found a {
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #fff;
+  background-color: #84e;
+  padding: .9375rem 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.not-found a:hover {
+  opacity: 0.8;
+}

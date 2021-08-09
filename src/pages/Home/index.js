@@ -4,6 +4,8 @@ import Loader from "react-js-loader"
 
 import './home.css'
 
+import Footer from '../../components/Footer'
+
 import api from '../../services/api'
 
 const Home = () => {
@@ -32,21 +34,24 @@ const Home = () => {
   }
 
   return (
-    <div className="container">
-      <div className="lista-filmes">
-        {
-          filmes.map(filme => {
-            return (
-              <article key={filme.id}>
-                <strong> {filme.nome} </strong>
-                <img src={filme.foto} alt={filme.nome}/>
-                <Link to={`/filme/${filme.id}`}>Acessar</Link>
-              </article>
-            )
-          })
-        }
+    <>
+      <div className="container">
+        <div className="lista-filmes">
+          {
+            filmes.map(filme => {
+              return (
+                <article key={filme.id}>
+                  <strong> {filme.nome} </strong>
+                  <img src={filme.foto} alt={filme.nome}/>
+                  <Link to={`/filme/${filme.id}`}>Acessar</Link>
+                </article>
+              )
+            })
+          }
+        </div>
       </div>
-    </div>
+      <Footer />
+    </>
   )
 }
 

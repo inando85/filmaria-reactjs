@@ -45,7 +45,7 @@ const Favoritos = () => {
                 <div>
                   <Link to={`/filme/${filme.id}`}>Detalhes</Link>
                   {/* Como a função handleDelete vai passar parametro, devemos usar uma função anonima pra nao executar automaticamente ela mas sim, somente no click */}
-                  <button onClick={ () => handleDelete(filme.id) }>Remover</button>
+                  <button onClick={ () => handleDelete(filme.id) }>X</button>
                 </div>
               </li>
             )

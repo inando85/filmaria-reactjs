@@ -6,10 +6,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: calc(100vh - 60px);
 }
 
 .lista-filmes {
   margin: 1.25rem 0;
+}
+
+.lista-filmes-loading {
+  margin-top: 400px auto;
 }
 
 .lista-filmes article {
